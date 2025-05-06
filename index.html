@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+</head>
+<body>
+    <header>
+        <h1>kr10 يتحدث سيطره كامله ع موقع اسراىيلي!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من أنا</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>الرئيسية</h2>
+        <p>هذه هي الصفحة الرئيسية لموقعي الشخصي.</p>
+    </section>
+    <section id="about">
+        <h2>من أنا</h2>
+        <p>كرفوس ياجيش يعني تم اختراق اول موقع اسراىيلي.</p>
+    </section>
+    <section id="contact">
+        <h2>اتصل بي</h2>
+        <p>اكتب تفاصيل الاتصال الخاصة بك هنا.</p>
+    </section>
+</body><button onclick="showMessage()">اضغط هنا للترحيب</button>
+<p id="message"></p>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").innerHTML = "مرحبًا بك في موقعي!";
+    }
+</script>
+
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي الشخصي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<button onclick="changeBackground()">غيّر اللون</button>
+button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  <!DOCTYPE html>
+  <html lang="ar">
+  <head>
+    <meta charset="UTF-8">
+    <title>تجربة تغيير اللون</title>
+  </head>
+  <body>
+  
+    <button onclick="changeBackground()">غيّر اللون</button>
+  
+    <script>
+      function changeBackground() {
+        document.body.style.backgroundColor = "#f0e68c"; // لون كاكي فاتح
+      }
+    </script>
+  
+  </body>
+  </html>
+  <!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>شات بسيط</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      direction: rtl;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    #chat {
+      border: 1px solid #ccc;
+      padding: 10px;
+      height: 300px;
+      overflow-y: auto;
+      background-color: white;
+      margin-bottom: 10px;
+    }
+    .msg {
+      margin: 5px 0;
+    }
+    .user {
+      color: blue;
+    }
+    .bot {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🤖 شات بسيط</h2>
+  <div id="chat"></div>
+
+  <input type="text" id="userInput" placeholder="اكتب رسالتك هنا" />
+  <button onclick="sendMessage()">إرسال</button>
+
+  <script>
+    function sendMessage() {
+      let input = document.getElementById("userInput");
+      let message = input.value;
+      if (message.trim() === "") return;
+
+      let chat = document.getElementById("chat");
+
+      // عرض رسالة المستخدم
+      chat.innerHTML += `<div class="msg user">👤 أنت: ${message}</div>`;
+
+      // رد تلقائي من البوت
+      let reply = getBotReply(message);
+      chat.innerHTML += `<div class="msg bot">🤖 البوت: ${reply}</div>`;
+
+      // تنظيف الحقل
+      input.value = "";
+      chat.scrollTop = chat.scrollHeight;
+    }
+
+    function getBotReply(msg) {
+      msg = msg.toLowerCase();
+
+      if (msg.includes("مرحبا") || msg.includes("اهلا")) {
+        return "أهلاً وسهلاً! كيف أقدر أساعدك اليوم؟ 🌟";
+      } else if (msg.includes("كيف حالك")) {
+        return "أنا تمام الحمدلله! وأنت؟ 😊";
+      } else if (msg.includes("وداعا")) {
+        return "مع السلامة! شرفتني! 👋";
+      } else {
+        return "مممم، ما فهمت عليك! جرب سؤال ثاني 🤔";
+      }
+    }
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>الوضع الليلي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>☀️ / 🌙 تفعيل الوضع الليلي</h1>
+  <p>اضغط الزر لتبديل بين الوضع العادي والوضع الليلي.</p>
+
+  <button onclick="toggleDarkMode()">تفعيل / إيقاف الوضع الليلي</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+<img src="https://www.w3schools.com/html/img_chania.jpg" alt="منظر طبيعي">
+
+
+
+
